@@ -1,7 +1,7 @@
 {
-  "name": "@tmus/node-red-contrib-differences",
-  "version": "1.1.1",
-  "description": "Given two array inputs, when this node is executed it will output the differences between the two arrays",
+  "name": "@tmus/node-red-contrib-rpi-adeept-motor",
+  "version": "1.0.0",
+  "description": "Given a power level, this node will provide the correct signals to the node-red-node-pi-gpio to control the direction of a motor",
   "main": "dist/index.js",
   "files": [
     "dist/"
@@ -15,11 +15,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tmobile/node-red-contrib-differences"
+    "url": "https://github.com/tmobile/node-red-contrib-rpi-adeept-motor"
   },
   "keywords": [
     "node-red",
-    "Array Differences",
+    "Adeept Motor Hat",
+    "Adeept",
+    "Motor",
     "IoT",
     "Internet of Things"
   ],
@@ -27,7 +29,7 @@
   "license": "Apache-2.0",
   "node-red": {
     "nodes": {
-      "array-diff": "dist/differences-node.js"
+      "rpi-adeept-motor": "dist/rpi-adeept-motor-node.js"
     }
   },
   "devDependencies": {
@@ -44,7 +46,7 @@
     "typescript": "^3.8.3"
   },
   "bugs": {
-    "url": "https://github.com/tmobile/node-red-contrib-differences/issues"
+    "url": "https://github.com/tmobile/node-red-contrib-rpi-adeept-motor/issues"
   },
-  "homepage": "https://github.com/tmobile/node-red-contrib-differences"
+  "homepage": "https://github.com/tmobile/node-red-contrib-rpi-adeept-motor"
 }

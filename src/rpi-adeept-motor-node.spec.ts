@@ -11,7 +11,7 @@ its contributors may be used to endorse or promote products derived from this so
 ================================
 */
 
-import differencesNode from "./differences-node";
+import rpiAdeeptMotorNode from "./rpi-adeept-motor-node";
 import helper from "node-red-node-test-helper";
 import { expect } from "chai";
 
@@ -45,7 +45,7 @@ describe("The Differences Node", function () {
   ];
 
   it("should be loaded", function (done) {
-    helper.load(differencesNode, flow, function () {
+    helper.load(rpiAdeeptMotorNode, flow, function () {
       try {
         const n1 = helper.getNode("n1");
         expect(n1.type).to.equal("differences");
@@ -58,7 +58,7 @@ describe("The Differences Node", function () {
 
   it("should output complement", function (done) {
     flow[0].func = "-";
-    helper.load(differencesNode, flow, function () {
+    helper.load(rpiAdeeptMotorNode, flow, function () {
       try {
         const n1 = helper.getNode("n1");
         const n2 = helper.getNode("n2");
@@ -82,7 +82,7 @@ describe("The Differences Node", function () {
 
   it("should output intersection", function (done) {
     flow[0].func = "⋂";
-    helper.load(differencesNode, flow, function () {
+    helper.load(rpiAdeeptMotorNode, flow, function () {
       try {
         const n1 = helper.getNode("n1");
         const n2 = helper.getNode("n2");
@@ -110,7 +110,7 @@ describe("The Differences Node", function () {
 
   it("should output union", function (done) {
     flow[0].func = "⋃";
-    helper.load(differencesNode, flow, function () {
+    helper.load(rpiAdeeptMotorNode, flow, function () {
       try {
         const n1 = helper.getNode("n1");
         const n2 = helper.getNode("n2");
